@@ -1,0 +1,5 @@
+FROM debian
+#RUN mkdir -p /opt/test
+WORKDIR /opt/test
+COPY test.sh test.sh
+CMD ["sh","test.sh"]

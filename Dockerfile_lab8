@@ -1,0 +1,5 @@
+ARG baseImgTag=latest
+FROM ubuntu:${baseImgTag}
+ENV PROJECT_HOME=/opt/test
+WORKDIR $PROJECT_HOME
+RUN echo "The image version is: $PROJECT_HOME"

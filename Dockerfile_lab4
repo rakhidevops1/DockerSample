@@ -1,0 +1,6 @@
+FROM ubuntu
+ENV PROJECT_HOME=/opt/test
+WORKDIR $PROJECT_HOME
+COPY test.sh test.sh
+CMD ["sh","test.sh"]
+

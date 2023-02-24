@@ -1,0 +1,6 @@
+FROM debian
+RUN echo "welcome"
+RUN apt update -y && apt install git vim wget -y
+ENTRYPOINT ["echo", "welcome to ENTRYPOINT"]
+CMD ["ls","-lar"]
+

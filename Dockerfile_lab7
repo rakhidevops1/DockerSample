@@ -1,0 +1,4 @@
+ARG baseImgTag=latest
+FROM ubuntu:${baseImgTag}
+ARG baseImgTag=new
+RUN echo "The image version is: $baseImgTag"
